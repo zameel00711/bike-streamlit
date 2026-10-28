@@ -1,0 +1,26 @@
+{
+  "selected_model": "Random forest",
+  "model_key": "random_forest",
+  "cv_rmse": 61.760675183327486,
+  "test_metrics": {
+    "MAE": 38.89417049426145,
+    "RMSE": 58.34562958822468,
+    "R2": 0.8924942911407244
+  },
+  "features": [
+    "season",
+    "yr",
+    "mnth",
+    "hr",
+    "holiday",
+    "weekday",
+    "workingday",
+    "weathersit",
+    "temp",
+    "atemp",
+    "hum",
+    "windspeed"
+  ],
+  "dataset_rows": 17379,
+  "dataset_source": "UCI Bike Sharing Dataset, hourly data"
+}
