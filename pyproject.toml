@@ -1,9 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "bike"
 version = "0.1.0"
-description = "Add your description here"
+description = "Bike sharing demand prediction app and training pipeline"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.10"
 dependencies = [
+    "pandas>=2.0",
+    "numpy>=1.24",
+    "matplotlib>=3.7",
+    "seaborn>=0.13",
+    "scikit-learn>=1.2",
+    "streamlit>=1.57",
     "joblib>=1.6.0",
 ]
+
+[tool.setuptools]
+py-modules = ["bike_sharing", "main", "streamlit_app", "train_model"]
